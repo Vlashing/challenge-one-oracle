@@ -1,0 +1,104 @@
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #D8DFE8;
+}
+
+header {
+    background-color: #D8DFE8;
+}
+
+div {
+    border: 3px;
+    padding: 5px;
+}
+
+.munheco{
+    float: right;
+}
+  
+.clearfix::after, legend{
+    content: "";
+    text-align: right;
+    clear: both;
+    display: table;
+}
+
+
+form {
+    background-color: #D8DFE8;
+    position: absolute;
+    width: 352px;
+    height: 50px;
+    left: calc(50% - 352px/2 - 304px);
+    top: calc(50% - 50px/2 - 319px);
+}
+
+main{
+    background-color: #D8DFE8;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+form{
+    background-color: #D8DFE8;
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.texto{
+    display: block;
+    margin: 0 0 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    border-color: none;
+    border: none;
+    background-color: #D8DFE8;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+form input{
+    display: block;
+}
+
+.bttnencriptar{
+    background: #0A3871;
+    width: 328px;
+    Height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border:none;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.desencriptador{
+    background: #D8DFE8;
+    width: 328px;
+    Height: 67px;
+    border-radius: 24px;
+    padding: 24px;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+footer{
+    display: block;
+    text-align: center;
+    padding:40px;
+}
