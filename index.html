@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="es">
     <head>
         <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device=with, initial-scale=1.0">
         <title>Encriptador de texto</title>
+        <link rel="shortcut icon" href="Imagenes/Vector.png" width="32px" height="32px" type="image/x-icon">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <img src="Imagenes/Vector.png" alt="banner">
-        </header>
-        <main>
-            <div class="container">
-                <div class="encriptar">
-                    <textarea name="texto" cols="30" rows="10" id="texto" class="texto" placeholder="Ingresa el texto aqui" required></textarea>   
-                </div>
-                <div class="terminos">
-                    <p>Sólo letras minúsculas y sin acentros</p>
-                </div>
-            </div>
-            <div class="botones">
-                <button type="button" class="bttnencriptar" onclick="encriptar()">Encriptar</button>
-                <input type="button" class="bttnencriptar" value="Desencriptar" onclick="desencriptar"/>
-            </div>
-        </main>
-        
-        <div class="encriptado">
-                </div><p class="mensaje">
-                <img alt="" id="munheco" src="Imagenes/Muñeco.png">
-                <div class="mensaje-encriptado" id="mensaje-encriptado">
-                    <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
-                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
-                </div>
-            </p>
+    <header>
+        <div class="header">
+        <img class="header_logo" src="Imagenes/Vector.png" alt="banner">
         </div>
-
+    </header>
+        <main>
+            
+            <section class="seccion1">
+                <section>
+                <textarea class="text-area" cols="30" rows="10" id="texto" placeholder="Ingresa el texto aquí"></textarea>   
+                </section>
+                <div>
+                    <p class="informacion">&#9432 Sólo letras minúsculas y sin acentros</p>
+                </div>
+                <div class="botones">
+                    <input type="button" class="btnencriptar"  value="encriptar" onclick="encriptar()">
+                    <input type="button" class="btndesencriptar" value="desencriptar" onclick="desencriptar()">
+                </div>
+            </section>
+            <section class="seccion2">
+            <div class="box-mensaje">
+                    <img alt="" class="munheco" id="munheco" src="Imagenes/Muñeco.png"> 
+                    <div class="contenedor-parrafo">
+                    <h1 class="ningun-mensaje" id="ningun-mensaje">Ningún mensaje fue encontrado</h1>
+                    <h2 class="ingrese-mensaje" id="ingrese-mensaje">Ingresa el texto que desees encriptar o desencriptar</h2>
+                    </div>
+                <div class="textocopiar">
+                    <textarea class="mensaje" name="" id="textocopiado" cols="20" rows="10" placeholder=""></textarea>
+                </div>
+                <div class="btnCopiar">
+                    <input type="button" class="copiar" id="btn-copiar" value="copy" onclick="copy()">
+                </div>           
+            </div>
+            <div class="contenedor-resultado">
+                <p class="texto-resultado"></p>
+            </div>
+            </section>
+        </main>
+        <section class="seccion3">
         <footer>
-            <p class="copyright">&copy Copyright Valeria Zavala - 2023</p>
+            <p class="copyright">&copy Copyright <a href="https://www.linkedin.com/in/valeriazavala94/">Valeria Zavala</a> - 2023</p>
         </footer>
-    </body>
-    <script src="index.js"></script>
+        </section>
+    </body> 
+<script type="text/javascript" src="index.js"></script>  
 </html>
+
